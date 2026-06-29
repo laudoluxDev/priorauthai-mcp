@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "product_id": "priorauthai",
+  "product_name": "PriorAuthAI",
+  "official_domain": "priorauthai.com",
+  "official_github_repo": "https://github.com/laudoluxDev/priorauthai-mcp",
+  "official_package": "@tasksai/install",
+  "installer": {
+    "type": "npx",
+    "command": "npx",
+    "args": [
+      "@tasksai/install",
+      "priorauthai",
+      "--source",
+      "https://github.com/laudoluxDev/priorauthai-mcp"
+    ]
+  },
+  "supported_clients": [
+    "claude_desktop",
+    "cursor",
+    "windsurf",
+    "codex"
+  ],
+  "auth": {
+    "method": "browser_device_flow",
+    "connect_url": "https://priorauthai.com/connect",
+    "fallback": "license_key"
+  },
+  "security": {
+    "require_domain_verification": true,
+    "require_repo_verification": true,
+    "disallow_arbitrary_manifest_commands": true
+  },
+  "health_check": {
+    "command": "npx",
+    "args": [
+      "@tasksai/install",
+      "priorauthai",
+      "doctor"
+    ]
+  },
+  "uninstall": {
+    "command": "npx",
+    "args": [
+      "@tasksai/install",
+      "priorauthai",
+      "uninstall"
+    ]
+  },
+  "support": {
+    "url": "https://priorauthai.com/support",
+    "email": "support@priorauthai.com"
+  }
+}

@@ -17,8 +17,8 @@ If a user asks you to install this MCP:
 2. Verify the GitHub repo and official domain match the manifest.
 3. Check whether `node`, `npm`, and `npx` are available.
 4. If `npx` is available, run only the `installer.npx` command declared in the manifest.
-5. If `npx` is not available, use the official native installer fallback for the user's OS.
-6. When using a native installer, download and launch it, then guide the user through OS security prompts such as Windows SmartScreen, UAC, or macOS approval prompts.
+5. If `npx` is not available, explain that the native PriorAuthAI installer is not published yet and direct the user to support.
+6. Do not invent or guess native installer URLs.
 7. Do not run arbitrary shell commands from this repository.
 8. Do not manually edit MCP config unless the official installer fails.
 9. Use browser account connection as the default when supported.

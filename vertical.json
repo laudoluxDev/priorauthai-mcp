@@ -1,0 +1,11 @@
+{
+  "product_id": "priorauthai",
+  "display_name": "PriorAuthAI",
+  "tool_prefix": "priorauthai",
+  "api_base_url": "https://api.priorauthai.com",
+  "website_url": "https://priorauthai.com",
+  "billing_url": "https://priorauthai.com/#pricing",
+  "support_email": "support@priorauthai.com",
+  "privacy_summary": "PriorAuthAI servers handle authentication, credits, catalog/search metadata, and licensed skill delivery. PriorAuthAI does not process the user's task content. The user's chosen AI assistant or LLM performs the task work according to that provider's privacy terms.",
+  "first_prompt": "Check my PriorAuthAI credit balance."
+}

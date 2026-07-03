@@ -6,19 +6,18 @@
   "official_github_repo": "https://github.com/laudoluxDev/priorauthai-mcp",
   "official_package": "@tasksai/install",
   "installer": {
-    "preferred": "npx",
-    "npx": {
-      "command": "npx",
+    "preferred": "npm_exec",
+    "npm_exec": {
+      "command": "npm",
       "args": [
-        "@tasksai/install",
-        "priorauthai",
-        "--source",
-        "https://github.com/laudoluxDev/priorauthai-mcp"
+        "exec",
+        "--package=@tasksai/install",
+        "--call",
+        "tasksai-install priorauthai --source https://github.com/laudoluxDev/priorauthai-mcp"
       ],
       "requires": [
         "node",
-        "npm",
-        "npx"
+        "npm"
       ]
     }
   },
@@ -69,23 +68,29 @@
     "native_installer_user_approval_required": false
   },
   "health_check": {
-    "command": "npx",
+    "command": "npm",
     "args": [
-      "@tasksai/install",
-      "priorauthai",
-      "doctor"
+      "exec",
+      "--package=@tasksai/install",
+      "--call",
+      "tasksai-install priorauthai doctor"
     ]
   },
   "uninstall": {
-    "command": "npx",
+    "command": "npm",
     "args": [
-      "@tasksai/install",
-      "priorauthai",
-      "uninstall"
+      "exec",
+      "--package=@tasksai/install",
+      "--call",
+      "tasksai-install priorauthai uninstall"
     ]
   },
   "support": {
     "url": "https://priorauthai.com/support",
     "email": "support@priorauthai.com"
+  },
+  "runtime": {
+    "source": "shared_installer",
+    "notes": "The wrapper repo provides product metadata; @tasksai/install supplies the shared MCP runtime."
   }
 }

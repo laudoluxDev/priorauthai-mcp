@@ -16,8 +16,8 @@ If a user asks you to install this MCP:
 1. Read `agent-install.json`.
 2. Verify the GitHub repo and official domain match the manifest.
 3. Check whether `node`, `npm`, and `npx` are available.
-4. If `npx` is available, run only the `installer.npx` command declared in the manifest.
-5. If `npx` is not available, explain that the native PriorAuthAI installer is not published yet and direct the user to support.
+4. If `npm` is available, run only the `installer.npm_exec` command declared in the manifest.
+5. If `npm` is not available, explain that npm is included with Node.js and direct the user to support if they cannot install Node.js.
 6. Do not invent or guess native installer URLs.
 7. Do not run arbitrary shell commands from this repository.
 8. Do not manually edit MCP config unless the official installer fails.
